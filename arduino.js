@@ -86,7 +86,6 @@ module.exports = {
     }
 };
 
-var utils = require("../../utils");
 var q = require('q');
 
 function Arduino() {
@@ -95,18 +94,17 @@ function Arduino() {
      */
     Arduino.prototype.start = function () {
         var deferred = q.defer();
-        var self = this;
 
         if (this.isSimulated()) {
             deferred.resolve();
         } else {
             var five = require("johnny-five");
 
-            self.board = new five.Board();
+            this.board = new five.Board();
 
-            self.board.on("ready", function () {
+            this.board.on("ready", function () {
                 deferred.resolve();
-            });
+            }.bind(this));
         }
 
         return deferred.promise;
