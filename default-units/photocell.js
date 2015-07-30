@@ -4,7 +4,7 @@ module.exports = {
         label: "Photocell",
         role: "sensor",
         family: "rangeSensor",
-        deviceTypes: ["arduino/microcontroller"],
+        deviceTypes: ["microcontroller/microcontroller"],
         unit: "LUX",
         configuration: [{
             label: "Pin",

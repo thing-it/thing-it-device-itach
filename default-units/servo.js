@@ -4,7 +4,7 @@ module.exports = {
         label: "Servo",
         role: "actor",
         family: "servo",
-        deviceTypes: ["arduino/microcontroller"],
+        deviceTypes: ["microcontroller/microcontroller"],
         services: [{
             id: "toPosition",
             label: "To Position",

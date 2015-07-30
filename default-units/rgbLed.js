@@ -4,7 +4,7 @@ module.exports = {
         label: "LED (RGB)",
         role: "actor",
         family: "coloredLight",
-        deviceTypes: ["arduino/microcontroller"],
+        deviceTypes: ["microcontroller/microcontroller"],
         services: [{
             id: "on",
             label: "On"

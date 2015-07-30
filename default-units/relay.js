@@ -4,7 +4,7 @@ module.exports = {
         label: "Relay",
         role: "actor",
         family: "relay",
-        deviceTypes: ["arduino/microcontroller"],
+        deviceTypes: ["microcontroller/microcontroller"],
         services: [{
             id: "open",
             label: "Open"
