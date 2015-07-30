@@ -11,8 +11,3 @@ This allows you to
 * define complex services, event processing, storyboards and Jobs combining Arduino stups with other Devices, Sensors and Actors. 
 
 by means of [thing-it-node](https://github.com/marcgille/thing-it-node) and [thing-it.com](http://www.thing-it.com).
-
-
-
-
-# thing-it-device-arduino
