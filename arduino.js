@@ -1,7 +1,7 @@
 module.exports = {
     metadata: {
         family: "microcontroller",
-        superDevice: "microcontroller/microcontroller",
+        superDevice: "arduino/microcontroller",
         plugin: "arduino",
         label: "Arduino Uno",
         manufacturer: "Arduino",

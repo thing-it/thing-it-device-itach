@@ -1,6 +1,6 @@
 {
   "name": "thing-it-device-arduino",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "[thing-it-node] Device Plugin for Arduino.",
   "authors": "Marc Gille",
   "license": "MIT, EPL",

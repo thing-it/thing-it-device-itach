@@ -1,7 +1,7 @@
 module.exports = {
 	metadata : {
 		family : "microcontroller",
-		plugin : "microcontroller",
+		plugin : "arduino",
 		virtual : true,
 		dataTypes : {
 			digitalInOutPin : {
