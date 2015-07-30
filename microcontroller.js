@@ -22,8 +22,5 @@ module.exports = {
 	}
 };
 
-var utils = require("../../utils");
-var q = require('q');
-
 function MicroController() {
 }
