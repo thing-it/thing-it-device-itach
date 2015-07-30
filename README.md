@@ -23,20 +23,7 @@ connect your microcontroller to your [thing-it] Node Box via a USB cable.
 
 ## User Interface
 
-The appearance of the UI of the Microcontroller Plugin on the [thing-it] Mobile Client depends on the configured Actors and Sensors
+The appearance of the UI of the Microcontroller Plugin on the [thing-it] Mobile Client depends on the configured Actors and Sensors, e.g.
+as follows for the Simple Lighting example:
 
-### LED
-
-### RGB LED 
-
-### Button
-
-### Servo
-
-### LCD
-
-### Photocell
-
-### Potentiometer
-
-### Relay
+<img src="./documentation/images/simple-lighting.png">
