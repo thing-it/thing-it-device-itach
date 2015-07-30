@@ -11,3 +11,32 @@ This allows you to
 * define complex services, event processing, storyboards and Jobs combining Arduino stups with other Devices, Sensors and Actors. 
 
 by means of [thing-it-node](https://github.com/marcgille/thing-it-node) and [thing-it.com](http://www.thing-it.com).
+
+## Installation
+
+After you have 
+
+* [set up](http://www.thing-it.com/thing-it/index.html?document=gettingStarted#/documentationPanel) your [thing-it] Node Box and 
+* configured or copied a [thing-it] Mesh with a TI SensorTag, 
+
+connect your Arduino to your [thing-it] Node Box via a USB cable.
+
+## User Interface
+
+The appearance of the UI of the Arduino Plugin on the [thing-it] Mobile Client depends on the configured Actors and Sensors
+
+### LED
+
+### RGB LED 
+
+### Button
+
+### Servo
+
+### LCD
+
+### Photocell
+
+### Potentiometer
+
+### Relay
