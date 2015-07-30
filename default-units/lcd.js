@@ -4,7 +4,7 @@ module.exports = {
         label: "LCD Display",
         role: "actor",
         family: "textDisplay",
-        deviceTypes: ["microcontroller/microcontroller"],
+        deviceTypes: ["arduino/microcontroller"],
         services: [{
             id: "clear",
             label: "Clear",

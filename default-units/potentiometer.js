@@ -4,7 +4,7 @@ module.exports = {
         label: "Potentiometer",
         role: "sensor",
         family: "rangeSensor",
-        deviceTypes: ["microcontroller/microcontroller"],
+        deviceTypes: ["arduino/microcontroller"],
         unit: "Degrees",
         configuration: [{
             label: "Pin",

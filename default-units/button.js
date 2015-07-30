@@ -4,7 +4,7 @@ module.exports = {
 		label : "Button",
 		role : "sensor",
 		family : "button",
-		deviceTypes : [ "microcontroller/microcontroller" ],
+		deviceTypes : [ "arduino/microcontroller" ],
 		configuration : [ {
 			label : "Pin",
 			id : "pin",
