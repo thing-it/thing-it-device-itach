@@ -5,6 +5,8 @@
 
 [thing-it-node] Device Plugin for Microcontrollers (Arduino Uno and others).
 
+<img src="./documentation/images/arduino.jpg">
+
 This allows you to 
 
 * control the microcontroller configurations devices over the Internet,
