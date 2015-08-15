@@ -1,14 +1,12 @@
 module.exports = {
     metadata: {
-        return {
-            family: "irSniffer",
-            plugin: "irSniffer",
-            label: "IR Sniffer",
-            actorTypes: [],
-            sensorTypes: [],
-            services: [],
-            configuration: [{id: "host", label: "Host", type: {id: "string"}}]
-        }
+        family: "irSniffer",
+        plugin: "irSniffer",
+        label: "IR Sniffer",
+        actorTypes: [],
+        sensorTypes: [],
+        services: [],
+        configuration: [{id: "host", label: "Host", type: {id: "string"}}]
     },
     create: function (commands) {
         return new irSniffer().initialize(commands);
