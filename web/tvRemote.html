@@ -1,50 +1,50 @@
 <table class="formTable">
     <tr valign="top">
         <td>
-            <div class="circleButton" ng-click="panel.callActorService(component, 'powerOn')"><i
+            <div class="circleButton" ng-click="panel.callDeviceService(component, 'power')"><i
                     class="fa fa-power-off"></i></div>
         </td>
-        <td>{{actor.__state.channel}}</td>
+        <td>{{component.__state.channel}}</td>
         <td>
             <table style="margin-left: 20px;">
                 <tr>
                     <td>
-                        <div class="circleButton" ng-click="panel.callActorService(component, 'channelUp')">1</div>
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel1')">1</div>
                     </td>
                     <td>
-                        <div class="circleButton" ng-click="panel.callActorService(component, 'channelUp')">2</div>
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel2')">2</div>
                     </td>
                     <td>
-                        <div class="circleButton" ng-click="panel.callActorService(component, 'channelUp')">3</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="circleButton" ng-click="panel.callActorService(component, 'channelUp')">4</div>
-                    </td>
-                    <td>
-                        <div class="circleButton" ng-click="panel.callActorService(component, 'channelUp')">5</div>
-                    </td>
-                    <td>
-                        <div class="circleButton" ng-click="panel.callActorService(component, 'channelUp')">6</div>
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel3')">3</div>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <div class="circleButton" ng-click="panel.callActorService(component, 'channelUp')">7</div>
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel4')">4</div>
                     </td>
                     <td>
-                        <div class="circleButton" ng-click="panel.callActorService(component, 'channelUp')">8</div>
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel5')">5</div>
                     </td>
                     <td>
-                        <div class="circleButton" ng-click="panel.callActorService(component, 'channelUp')">9</div>
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel6')">6</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel7')">7</div>
+                    </td>
+                    <td>
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel8')">8</div>
+                    </td>
+                    <td>
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel9')">9</div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                     </td>
                     <td>
-                        <div class="circleButton" ng-click="panel.callActorService(component, 'channelUp')">0</div>
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel0')">0</div>
                     </td>
                     <td>
                     </td>
@@ -55,7 +55,7 @@
             <table style="margin-left: 20px;">
                 <tr>
                     <td align="center">
-                        <div class="circleButton" ng-click="panel.callActorService(component, 'channelUp')">+</div>
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'channelUp')">+</div>
                     </td>
                 </tr>
                 <tr>
@@ -63,7 +63,7 @@
                 </tr>
                 <tr>
                     <td align="center">
-                        <div class="circleButton" ng-click="panel.callActorService(component, 'channelDown')">-</div>
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'channelDown')">-</div>
 
                     </td>
                 </tr>
@@ -74,7 +74,7 @@
                 <tr>
                     <td align="center">
 
-                        <div class="circleButton" ng-click="panel.callActorService(component, 'channelUp')"><i
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'volumeUp')"><i
                                 class="fa fa-chevron-up"></i></div>
 
                     </td>
@@ -84,7 +84,7 @@
                 </tr>
                 <tr>
                     <td align="center">
-                        <div class="circleButton" ng-click="panel.callActorService(component, 'channelDown')"><i
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'volumeDown')"><i
                                 class="fa fa-chevron-down"></i></div>
 
                     </td>
