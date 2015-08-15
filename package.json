@@ -1,20 +1,21 @@
 {
-  "name": "thing-it-device-microcontroller",
-  "version": "0.0.33",
-  "description": "[thing-it-node] Device Plugin for Microcontroller like Arduino.",
+  "name": "thing-it-device-itach",
+  "version": "0.0.1",
+  "description": "[thing-it-node] Device Plugin for ITach bridges (e.g. Wifi/IR). .",
   "authors": "Marc Gille",
   "license": "MIT, EPL",
   "keywords": [
     "IoT",
     "thing-it",
-    "Arduino",
-    "Uno"
+    "ITach",
+    "Infrared",
+    "Universal Remote"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/marcgille/thing-it-device-microcontroller"
+    "url": "https://github.com/marcgille/thing-it-device-itach"
   },
   "dependencies": {
-    "johnny-five": "^0.8.85"
+    "node-itach": "^1.1.0"
   }
 }
