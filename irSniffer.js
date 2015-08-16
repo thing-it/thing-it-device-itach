@@ -5,7 +5,7 @@ module.exports = {
         label: "IR Sniffer",
         actorTypes: [],
         sensorTypes: [],
-        services: [],
+        services: [{id: "clear", label: "Clear"}],
         configuration: [{id: "host", label: "Host", type: {id: "string"}}]
     },
     create: function (commands) {
@@ -63,4 +63,12 @@ function irSniffer() {
     irSniffer.prototype.setState = function () {
     };
 
+    /**
+     *
+     */
+    irSniffer.prototype.clear = function () {
+        this.state.lastCode = null;
+
+        this.publishStateChange();
+    };
 }
