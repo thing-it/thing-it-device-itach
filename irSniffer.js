@@ -9,7 +9,7 @@ module.exports = {
         configuration: [{id: "host", label: "Host", type: {id: "string"}}]
     },
     create: function (commands) {
-        return new irSniffer().initialize(commands);
+        return new irSniffer();
     }
 };
 
@@ -40,6 +40,7 @@ function irSniffer() {
                     this.logError(error);
                 } else {
                     this.state.lastCode = code;
+
                     this.publishStateChange();
                 }
             }.bind(this));
