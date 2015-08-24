@@ -1,7 +1,7 @@
 {
   "name": "thing-it-device-itach",
-  "version": "0.0.8",
-  "description": "[thing-it-node] Device Plugin for ITach bridges (e.g. Wifi/IR). .",
+  "version": "0.0.9",
+  "description": "[thing-it-node] Device Plugin for ITach bridges (e.g. Wifi/IR).",
   "authors": "Marc Gille",
   "license": "MIT, EPL",
   "keywords": [

@@ -24,11 +24,17 @@ After you have
 * [set up](http://www.thing-it.com/thing-it/index.html?document=gettingStarted#/documentationPanel) your [thing-it] Node Box and 
 * configured or copied a [thing-it] Mesh with an ITach Bridge, 
 
-connect your ITach Bridge to your [thing-it] Node Box via the appropriate settings for the ITach device (IP-Address).
+connect your ITach Bridge to your [thing-it] Node Box via the appropriate settings for the ITach device (IP-Address) and connect the IR Emitters, e.g.
+like
+
+<img src="./documentation/images/itach-setup.jpg">
 
 ## User Interface
 
-User Interfaces depend on the remotes you have been using. E.g. for the iRobot Roomba cleaning robot:
+User Interfaces depend on the remotes you have been using in your [thing-it] Node Mesh/Configuration. E.g. for a [Configuration
+with a Samsung TV and iRobot Roomba Cleaning Robot](./examples/samsungAndRoombaConfiguration.js):
+
+<img src="./documentation/images/samsung-and-roomba-ui.jpg">
 
 ## Adding your own Remotes
 
@@ -39,6 +45,7 @@ Mesh from the [thing-it.com Mesh Market]() to you local Node Box.
 
 Log in to [thing-it-node] locally or via thing-it.com. The UI should show you the Sniffer UI:
 
+<img src="./documentation/images/sniffer-ui.jpg">
 
 Click all relevant buttons on your remote and record the corresponding codes. With these create a file myRemote.js like
 
@@ -47,27 +54,29 @@ module.exports = require("./lib/itach").createExports({
     family: "myRemote", plugin: "myRemote",
     label: "My Remote"
 }, {
-    "service1": code1,
-    "service2": code2,
+    "button1": code1,
+    "button2": code2,
     ...
 });
 ```
 
-and create an .html file under /web, e.g.
+and create an **myRemote.html** file under /web, e.g.
 
 ```
 <table class="formTable">
     <tr>
         <td>
-            <div class="circleButton" ng-click="panel.callDeviceService(component, 'service1')">1
+            <div class="circleButton" ng-click="panel.callDeviceService(component, 'button1')">1
             </div>
         </td>
         <td>
-            <div class="circleButton" ng-click="panel.callDeviceService(component, 'service2')">2
+            <div class="circleButton" ng-click="panel.callDeviceService(component, 'button2')">2
             </div>
         </td>
     </tr>
 </table>
 
 ```
+
+You can surely be more cretive with your UI and finally get the remote control layout you always wanted.
 
