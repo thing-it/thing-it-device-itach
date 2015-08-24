@@ -3,6 +3,7 @@ module.exports = {
         family: "irSniffer",
         plugin: "irSniffer",
         label: "IR Sniffer",
+        tangible: true,
         actorTypes: [],
         sensorTypes: [],
         services: [{id: "clear", label: "Clear"}],
