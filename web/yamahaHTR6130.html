@@ -47,7 +47,7 @@
                         <div class="circleButton" ng-click="panel.callDeviceService(component, 'DVD')">DVD</div>
                     </td>
                     <td>
-                        <div class="buttonIcon" ng-click="panel.callDeviceService(component, 'DTVCBL')">DTV/CBL</div>
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'DTVCBL')">DTV/CBL</div>
                     </td>
                     <td>
                         <div class="circleButton" ng-click="panel.callDeviceService(component, 'DVR')">DVR</div>
@@ -59,7 +59,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="circleText" ng-click="panel.callDeviceService(component, 'VAUXDOCK')">V-AUX/DOCK</div>
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'VAUXDOCK')">V-AUX/DOCK</div>
                     </td>
                     <td>
                         <div class="circleButton" ng-click="panel.callDeviceService(component, 'D')">D</div>
@@ -83,70 +83,76 @@
                 <tr><td colspan="4" style="text-align: center;">SCENE</td></tr>
                 <tr>
                     <td>
-                        <div class="circleText" ng-click="panel.callDeviceService(component, 'SCENE1')">1</div>
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'SCENE1')">1</div>
                     </td>
                     <td>
-                        <div class="circleText" ng-click="panel.callDeviceService(component, 'SCENE2')">2</div>
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'SCENE2')">2</div>
                     </td>
                     <td>
-                        <div class="circleText" ng-click="panel.callDeviceService(component, 'SCENE3')">3</div>
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'SCENE3')">3</div>
                     </td>
                     <td>
-                        <div class="circleText" ng-click="panel.callDeviceService(component, 'SCENE4')">4</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                    </td>
-                    <td>
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'SCENE4')">4</div>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <div class="circleText" ng-click="panel.callDeviceService(component, 'TITLE')">TITLE</div>
                     </td>
                     <td>
-                        <div class="circleText" ng-click="panel.callDeviceService(component, 'PRESETCHUP')"><i
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'TITLE')">TITLE</div>
+                    </td>
+                    <td>
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'PRESETCHUP')"><i
                                 class="fa fa-chevron-up"></i></div>
                     </td>
                     <td>
-                        <div class="circleText" ng-click="panel.callDeviceService(component, 'MENU')">MENU</div>
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'MENU')">MENU</div>
                     </td>
                     <td>
-                        <div rowspan="2" class="circleText" ng-click="panel.callDeviceService(component, 'VOLUMEUP')"><i
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'VOLUMEUP')"><i
                                 class="fa fa-volume-up"></i></div>
                     </td>
                 <tr>
                     <td>
-                        <div class="circleText" ng-click="panel.callDeviceService(component, 'ABCDELEFT')"><i
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'ABCDELEFT')"><i
                                 class="fa fa-chevron-left"></i></div>
                     </td>
                     <td>
-                        <div class="circleText" ng-click="panel.callDeviceService(component, 'ENTER')">ENTER</div>
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'ENTER')">ENTER</div>
                     </td>
                     <td>
-                        <div class="circleText" ng-click="panel.callDeviceService(component, 'ABCDERIGHT')"><i
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'ABCDERIGHT')"><i
                                 class="fa fa-chevron-right"></i></div>
                     </td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>
-                        <div class="circleText" ng-click="panel.callDeviceService(component, 'RETURN')">RETURN</i></div>
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'RETURN')">RETURN</i></div>
                     </td>
                     <td>
-                        <div class="circleText" ng-click="panel.callDeviceService(component, 'PRESETCHUP')"><i
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'PRESETCHUP')"><i
                                 class="fa fa-chevron-down"></i></div>
                     </td>
                     <td>
-                        <div class="circleText" ng-click="panel.callDeviceService(component, 'DISPLAY')">DISPLAY</div>
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'DISPLAY')">DISPLAY</div>
+                    </td>
+                    <td>
+                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'VOLUMEUP')"><i
+                                class="fa fa-volume-down"></i></div>
                     </td>
                 </tr>
             </table>
         </td>
+        <!--
         <td>
             <table style="margin-left: 20px;">
                 <tr>
@@ -193,6 +199,7 @@
                 </tr>
             </table>
         </td>
+        -->
     </tr>
 </table>
 
