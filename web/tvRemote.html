@@ -2,95 +2,86 @@
     <tr valign="top">
         <td>
             <div class="circleButton" ng-click="panel.callDeviceService(component, 'power')"><i
-                    class="fa fa-power-off"></i></div>
+                    class="icon sl-power-1-1"></i></div>
         </td>
         <td>{{component.__state.channel}}</td>
-        <td>
-            <table class="buttonGrid" style="margin-left: 20px;">
-                <tr>
-                    <td>
-                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel1')">1</div>
-                    </td>
-                    <td>
-                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel2')">2</div>
-                    </td>
-                    <td>
-                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel3')">3</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel4')">4</div>
-                    </td>
-                    <td>
-                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel5')">5</div>
-                    </td>
-                    <td>
-                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel6')">6</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel7')">7</div>
-                    </td>
-                    <td>
-                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel8')">8</div>
-                    </td>
-                    <td>
-                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel9')">9</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td>
-                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel0')">0</div>
-                    </td>
-                    <td>
-                    </td>
-                </tr>
-            </table>
-        </td>
-        <td>
-            <table style="margin-left: 20px;">
-                <tr>
-                    <td style="text-align: center">
-                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'channelUp')">+</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="text-align: center">CH</td>
-                </tr>
-                <tr>
-                    <td style="text-align: center">
-                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'channelDown')">-</div>
-
-                    </td>
-                </tr>
-            </table>
-        </td>
-        <td>
-            <table style="margin-left: 10px;">
-                <tr>
-                    <td style="text-align: center">
-
-                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'volumeUp')"><i
-                                class="fa fa-chevron-up"></i></div>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td style="text-align: center">VOL</td>
-                </tr>
-                <tr>
-                    <td style="text-align: center">
-                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'volumeDown')"><i
-                                class="fa fa-chevron-down"></i></div>
-
-                    </td>
-                </tr>
-            </table>
-        </td>
     </tr>
 </table>
+<div style="text-align: center">
+    <table class="buttonGrid" style="margin-left: 20px; display: inline-block;">
+        <tr>
+            <td>
+                <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel1')">1</div>
+            </td>
+            <td>
+                <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel2')">2</div>
+            </td>
+            <td>
+                <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel3')">3</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel4')">4</div>
+            </td>
+            <td>
+                <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel5')">5</div>
+            </td>
+            <td>
+                <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel6')">6</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel7')">7</div>
+            </td>
+            <td>
+                <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel8')">8</div>
+            </td>
+            <td>
+                <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel9')">9</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <div class="circleButton" ng-click="panel.callDeviceService(component, 'channel0')">0</div>
+            </td>
+            <td>
+            </td>
+        </tr>
+    </table>
+</div>
+<div style="margin-top: 1em;" class="horizontalLine"></div>
+<div style="text-align: center">
+    <table class="buttonGrid" style="display: inline-block;">
+        <tr>
+            <td>
+                <div class="circleButton" ng-click="panel.callDeviceService(component, 'channelUp')">+</div>
+            </td>
+            <td style="width: 3em; text-align: center;">VOL</td>
+            <td>
+                <div class="circleButton" ng-click="panel.callDeviceService(component, 'channelDown')">-
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+<div style="margin-top: 1em;" class="horizontalLine"></div>
+<div style="text-align: center">
+    <table class="buttonGroup" style="display: inline-block;">
+        <tr>
+            <td>
+                <div class="circleButton" ng-click="panel.callDeviceService(component, 'volumeUp')"><i
+                        class="icon sl-arrow-57"></i></div>
 
+            </td>
+            <td style="width: 3em; text-align: center;">CH</td>
+            <td>
+                <div class="circleButton" ng-click="panel.callDeviceService(component, 'volumeDown')"><i
+                        class="icon sl-arrow-58"></i></div>
+            </td>
+        </tr>
+    </table>
+</div>
