@@ -30,19 +30,19 @@
                         <table class="buttonGrid" style="margin-left: 20px;">
                             <tr>
                                 <td>
-                                    <div class="circleButton" ng-click="panel.callDeviceService(component, 'hdmi1')">1
+                                    <div class="circleButton" ng-click="panel.callDeviceService(component, 'hdmi1'); $event.stopPropagation()">1
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="circleButton" ng-click="panel.callDeviceService(component, 'hdmi2')">2
+                                    <div class="circleButton" ng-click="panel.callDeviceService(component, 'hdmi2'); $event.stopPropagation()">2
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="circleButton" ng-click="panel.callDeviceService(component, 'hdmi3')">3
+                                    <div class="circleButton" ng-click="panel.callDeviceService(component, 'hdmi3'); $event.stopPropagation()">3
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="circleButton" ng-click="panel.callDeviceService(component, 'hdmi4')">3
+                                    <div class="circleButton" ng-click="panel.callDeviceService(component, 'hdmi4'); $event.stopPropagation()">3
                                     </div>
                                 </td>
                             </tr>
