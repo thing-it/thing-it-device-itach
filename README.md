@@ -19,6 +19,51 @@ start your cleaning robot with a more sophisticated schedule.
 
 ## Installation
 
+### Installation of NodeJS and [thing-it-node]
+
+First, install [nodejs](https://nodejs.org/en/download/) on your computer (e.g. your PC or your Raspberry Pi Zero).
+
+Then install **[thing-it-node]** via
+
+```
+npm install -g thing-it-node
+```
+Note, that depending on the access right settings on your file system you may need to invoke
+
+```
+sudo npm -g install thing-it-node 
+```
+
+instead.
+ 
+### Initialization and Start of [thing-it-node] 
+
+The **[thing-it-device-ti-itach]** Plugin is installed with **[thing-it-node]**, hence there is no need to install it separately.
+
+Create a directory in which you intend to run the configuration, e.g.
+ 
+```
+mkdir ~/itach-test
+cd ~/itach-test
+```
+and invoke
+
+```
+tin init
+```
+
+and then start **[thing-it-node]** via
+
+```
+tin run
+```
+
+Install the **thing-it Mobile App** from the Apple Appstore or Google Play and set it up to connect to **[thing-it-node]** 
+locally as described [here](https://thing-it.com/thing-it/#/documentationPanel/mobileClient/connectionModes) or just connect your browser under 
+[http://localhost:3001](http://localhost:3001).
+ 
+### ITach Device Setup
+ 
 After you have 
 
 * [set up](http://www.thing-it.com/thing-it/index.html?document=gettingStarted#/documentationPanel) your [thing-it] Node Box and 
@@ -49,7 +94,7 @@ Log in to [thing-it-node] locally or via thing-it.com. The UI should show you th
 
 Click all relevant buttons on your remote and record the corresponding codes. With these create a file myRemote.js like
 
-```
+```js
 module.exports = require("./lib/itach").createExports({
     family: "myRemote", plugin: "myRemote",
     label: "My Remote"
@@ -62,21 +107,37 @@ module.exports = require("./lib/itach").createExports({
 
 and create an **myRemote.html** file under /web, e.g.
 
-```
-<table class="formTable">
-    <tr>
-        <td>
+```html
+<div style="display: table-row;">
+        <div style="display: table-cell; padding: 0.5em;">
             <div class="circleButton" ng-click="panel.callDeviceService(component, 'button1')">1
             </div>
-        </td>
-        <td>
+        </div>
+        <div style="display: table-cell; padding: 0.5em;">
             <div class="circleButton" ng-click="panel.callDeviceService(component, 'button2')">2
             </div>
-        </td>
-    </tr>
-</table>
+        </div>
+</div>
 
 ```
 
-You can surely be more cretive with your UI and finally get the remote control layout you always wanted.
+You can surely be more creative with your UI and finally get the remote control layout you always wanted.
+
+## Where to go from here ...
+
+After completing the above, you may be interested in
+
+* Configuring additional [Devices](https://www.thing-it.com/thing-it/#/documentationPanel/mobileClient/deviceConfiguration), 
+[Groups](https://www.thing-it.com/thing-it/#/documentationPanel/mobileClient/groupConfiguration), 
+[Services](https://www.thing-it.com/thing-it/#/documentationPanel/mobileClient/serviceConfiguration), 
+[Event Processing](https://www.thing-it.com/thing-it/#/documentationPanel/mobileClient/eventConfiguration), 
+[Storyboards](https://www.thing-it.com/thing-it/#/documentationPanel/mobileClient/storyboardConfiguration) and 
+[Jobs](https://www.thing-it.com/thing-it/#/documentationPanel/mobileClient/jobConfiguration) via your **[thing-it] Mobile App**.
+* Use [thing-it.com](https://www.thing-it.com) to safely connect your Node Box from everywhere, manage complex configurations, store and analyze historical data 
+and offer your configurations to others on the **[thing-it] Mesh Market**.
+* Explore other Device Plugins like [Philips Hue](https://www.npmjs.com/package/thing-it-device-philips-hue), [Plugwise Smart Switches](https://www.npmjs.com/package/thing-it-device-plugwise) and many more. For a full set of 
+Device Plugins search for **thing-it-device** on [npm](https://www.npmjs.com/). Or [write your own Plugins](https://github.com/marcgille/thing-it-node/wiki/Plugin-Development-Concepts).
+
+
+
 
