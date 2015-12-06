@@ -85,8 +85,8 @@ with a Samsung TV and iRobot Roomba Cleaning Robot](./examples/samsungAndRoombaC
 
 You can create your own Devices with their own User Interface to send IR commands via the **ITach Bridge**. It just requires 
 
-* adding the desired IR commands to a simple JavaScript file (e.g. [iRobot Roomba Cleaning Robot](./iRobotRoombaRemote.js)) and
-* writing a bit of HTML code (e.g. [iRobot Roomba Cleaning Robot](./web/iRobotRoombaRemote.html)) to invoke the Device Services to submit the IR commands.
+* adding the desired IR commands to a simple JavaScript file (e.g. [iRobotRoombaRemote.js](./iRobotRoombaRemote.js)) and
+* writing a bit of HTML code (e.g. [web/iRobotRoombaRemote.html](./web/iRobotRoombaRemote.html)) to invoke the Device Services to submit the IR commands.
 
 To obtain the IR commands for your remote control, we have created an **IrSniffer** Device. The auxiliary **IrSniffer** Device is autodiscoverable.
 
