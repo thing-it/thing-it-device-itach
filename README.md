@@ -69,10 +69,10 @@ After you have
 * [set up](http://www.thing-it.com/thing-it/index.html?document=gettingStarted#/documentationPanel) your [thing-it] Node Box and 
 * configured or copied a [thing-it] Mesh with an ITach Bridge, 
 
-connect your ITach Bridge to your [thing-it] Node Box via the appropriate settings for the ITach device (IP-Address) and connect the IR Emitters, e.g.
-like
+connect your ITach Bridge to your [thing-it] Node Box via the appropriate settings for the ITach device (IP-Address) and 
+connect the IR Emitters to your devices, e.g. like
 
-<img src="./documentation/images/itach-setup.jpg">
+<img width="40%" src="./documentation/images/emitter-mounting.jpg">
 
 ## User Interface
 
