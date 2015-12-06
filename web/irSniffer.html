@@ -1,6 +1,12 @@
 <table class="formTable">
-    <tr valign="top">
-        <td>Last Code: {{component.__state.lastCode}}</td>
+    <tr>
+        <td><label>Last Code</label></td>
+        <td>{{component.__state.lastCode}}</td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <button ng-click="panel.callDeviceService(component, 'clear'); $event.stopPropagation()">Clear</button>
+        </td>
     </tr>
 </table>
 

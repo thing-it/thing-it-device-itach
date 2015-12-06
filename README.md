@@ -83,16 +83,26 @@ with a Samsung TV and iRobot Roomba Cleaning Robot](./examples/samsungAndRoombaC
 
 ## Adding your own Remotes
 
-Writing your own Remote Plugins is very easy:
+Connect the **ITach Brige** to your network and initialize **[thing-it-node]** in an arbitrary directory with
 
-Point [thing-it-node] to the [Sniffer Configuration](./examples/snifferConfiguration.js) or push the corresponding 
-Mesh from the [thing-it.com Mesh Market]() to you local Node Box.
+```
+tin init
+```
 
-Log in to [thing-it-node] locally or via thing-it.com. The UI should show you the Sniffer UI:
+and start with
+
+```
+tin run
+```
+
+The auxiliary **IrSniffer** Device is autodiscoverable. Hence, it will advertise itself in your Mobile App or Browser UI
+connected to the **[thing-it-node]** instance started above.
+
+After you confirmed the Device Registration for the **IrSniffer** you should see
 
 <img src="./documentation/images/sniffer-ui.jpg">
 
-Click all relevant buttons on your remote and record the corresponding codes. With these create a file myRemote.js like
+Click all relevant buttons on your remote and record the corresponding codes. With these create a file **myRemote.js** like
 
 ```js
 module.exports = require("./lib/itach").createExports({
