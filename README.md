@@ -83,7 +83,15 @@ with a Samsung TV and iRobot Roomba Cleaning Robot](./examples/samsungAndRoombaC
 
 ## Adding your own Remotes
 
-Connect the **ITach Brige** to your network and initialize **[thing-it-node]** in an arbitrary directory with
+You can create your own Devices with their own User Interface to send IR commands via the **ITach Bridge**. It just requires 
+
+* adding the desired IR commands to a simple JavaScript file (e.g. [iRobot Roomba Cleaning Robot](./iRobotRoombaRemote.js)) and
+* writing a bit of HTML code (e.g. [iRobot Roomba Cleaning Robot](./web/iRobotRoombaRemote.html)) to invoke the Device Services to submit the IR commands.
+
+To obtain the IR commands for your remote control, we have created an **IrSniffer** Device. The auxiliary **IrSniffer** Device is autodiscoverable.
+
+To get access to the **IrSniffer** Device connect the **ITach Brige** to your network and initialize **[thing-it-node]** in an arbitrary 
+directory with
 
 ```
 tin init
@@ -95,8 +103,7 @@ and start with
 tin run
 ```
 
-The auxiliary **IrSniffer** Device is autodiscoverable. Hence, it will advertise itself in your Mobile App or Browser UI
-connected to the **[thing-it-node]** instance started above.
+The **IrSniffer** Device it will advertise itself in your Mobile App or Browser UI connected to the **[thing-it-node]** instance started above.
 
 After you confirmed the Device Registration for the **IrSniffer** you should see
 
