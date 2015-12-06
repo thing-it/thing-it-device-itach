@@ -19,7 +19,7 @@ module.exports = {
 };
 
 var q = require("q");
-var iTach;
+var itachRemote;
 var dgram;
 
 /**
@@ -121,11 +121,11 @@ function IrSniffer() {
         if (this.isSimulated()) {
             deferred.resolve();
         } else {
-            if (!iTach) {
-                iTach = require("node-itach");
+            if (!itachRemote) {
+                itachRemote = require("./lib/itachRemote");
             }
 
-            this.remote = new iTach({host: this.configuration.host});
+            this.remote = itachRemote.create({host: this.configuration.host});
             this.remote.learn(function done(error, code) {
                 this.logDebug("Receiving code: " + code);
 

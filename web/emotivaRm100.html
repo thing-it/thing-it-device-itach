@@ -1,18 +1,25 @@
 <div class="section" style="padding-top: 0; padding-bottom: 0;">
     <div class="panel panel-default">
         <div class="panel-body">
-            <table style="width: 100%;">
-                <tr valign="top">
-                    <td style="width: 50%; text-align: center;">
-                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'standby')"><i
-                                class="icon sl-minus-2"></i></div>
-                    </td>
-                    <td style="width: 50%; text-align: center;">
-                        <div class="circleButton" ng-click="panel.callDeviceService(component, 'on')"><i
-                                class="icon sl-remote"></i></div>
-                    </td>
-                </tr>
-            </table>
+            <div style="text-align: center; margin-bottom: 1em;">
+                <div class="buttonGroup" style="display: inline-block;">
+                    <div style="display: table;">
+                        <div style="display: table-row; vertical-align: middle;">
+                            <div class="gridCell">
+                                <div class="circleButton"
+                                     ng-click="panel.callDeviceService(component, 'standby'); $event.stopPropagation()">
+                                    <i
+                                            class="icon sl-minus-2"></i></div>
+                            </div>
+                            <div class="gridCell">
+                                <div class="circleButton"
+                                     ng-click="panel.callDeviceService(component, 'on'); $event.stopPropagation()"><i
+                                        class="icon sl-remote"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -24,99 +31,62 @@
             </h4>
         </div>
         <div class="panel-body">
-            <table>
-                <tr>
-                    <td>
-                        <table class="buttonGrid" style="margin-left: 20px;">
-                            <tr>
-                                <td>
-                                    <div class="circleButton"
-                                         ng-click="panel.callDeviceService(component, 'hdmi1'); $event.stopPropagation()">
-                                        1
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="circleButton"
-                                         ng-click="panel.callDeviceService(component, 'hdmi2'); $event.stopPropagation()">
-                                        2
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="circleButton"
-                                         ng-click="panel.callDeviceService(component, 'hdmi3'); $event.stopPropagation()">
-                                        3
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="circleButton"
-                                         ng-click="panel.callDeviceService(component, 'hdmi4'); $event.stopPropagation()">
-                                        3
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
+            <div style="display: table;">
+                <div style="display: table-row; vertical-align: middle;">
+                    <div class="gridCell">
+                        <div class="circleButton"
+                             ng-click="panel.callDeviceService(component, 'hdmi1'); $event.stopPropagation()">1
+                        </div>
+                    </div>
+                    <div class="gridCell">
+                        <div class="circleButton"
+                             ng-click="panel.callDeviceService(component, 'hdmi2'); $event.stopPropagation()">2
+                        </div>
+                    </div>
+                    <div class="gridCell">
+                        <div class="circleButton"
+                             ng-click="panel.callDeviceService(component, 'hdmi3'); $event.stopPropagation()">3
+                        </div>
+                    </div>
+                    <div class="gridCell">
+                        <div class="circleButton"
+                             ng-click="panel.callDeviceService(component, 'hdmi4'); $event.stopPropagation()">4
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 <div class="section" style="padding-top: 0; padding-bottom: 0;">
     <div class="panel panel-default">
         <div class="panel-body">
-            <table style="width: 100%;">
-                <tr>
-                    <td style="text-align: center">
-                        <table style="margin-left: 10px;">
-                            <tr>
-                                <td style="text-align: center">
-
-                                    <div class="circleButton"
-                                         ng-click="panel.callDeviceService(component, 'channelUp')">
-                                        <i
-                                                class="fa fa-chevron-up"></i></div>
-
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: center">CH</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: center">
-                                    <div class="circleButton"
-                                         ng-click="panel.callDeviceService(component, 'channelDown')"><i
-                                            class="fa fa-chevron-down"></i></div>
-
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                    <td style="text-align: center">
-                        <table style="margin-left: 10px;">
-                            <tr>
-                                <td style="text-align: center">
-
-                                    <div class="circleButton" ng-click="panel.callDeviceService(component, 'volumeUp')">
-                                        <i
-                                                class="fa fa-chevron-up"></i></div>
-
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: center">VOL</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: center">
-                                    <div class="circleButton"
-                                         ng-click="panel.callDeviceService(component, 'volumeDown')"><i
-                                            class="fa fa-chevron-down"></i></div>
-
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
+            <div style="display: table-row; vertical-align: middle;">
+                <div class="gridCell">
+                    <div class="circleButton"
+                         ng-click="panel.callDeviceService(component, 'volumeUp'); $event.stopPropagation()">-
+                    </div>
+                </div>
+                <div class="gridCell">VOL</div>
+                <div class="gridCell">
+                    <div class="circleButton"
+                         ng-click="panel.callDeviceService(component, 'volumeDown'); $event.stopPropagation()">+
+                    </div>
+                </div>
+            </div>
+            <div style="display: table-row; vertical-align: middle;">
+                <div class="gridCell">
+                    <div class="circleButton"
+                         ng-click="panel.callDeviceService(component, 'channelUp'); $event.stopPropagation()">-
+                    </div>
+                </div>
+                <div class="gridCell">CH</div>
+                <div class="gridCell">
+                    <div class="circleButton"
+                         ng-click="panel.callDeviceService(component, 'channelDown'); $event.stopPropagation()">+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
