@@ -38,6 +38,7 @@ function IrSnifferDiscovery() {
 
                 irSniffer.configuration = this.defaultConfiguration;
                 irSniffer.configuration.host = "test";
+                irSniffer.configuration.label = "Test IR Sniffer";
 
                 this.advertiseDevice(irSniffer);
             }.bind(this), 20000);
@@ -84,6 +85,7 @@ function IrSnifferDiscovery() {
 
                     irSniffer.configuration = this.defaultConfiguration;
                     irSniffer.configuration.uuid = properties["UUID"];
+                    irSniffer.configuration.label = properties["UUID"];
                     irSniffer.configuration.host = properties["Config-URL"].substring(7); // Starts with http://
 
                     this.advertiseDevice(irSniffer);

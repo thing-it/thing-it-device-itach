@@ -1,11 +1,21 @@
 <table class="formTable">
     <tr>
+        <td><label>ITach Bridge</label></td>
+        <td>{{component.configuration.uuid}}</td>
+    </tr>
+    <tr>
+        <td><label>IP Address</label></td>
+        <td>{{component.configuration.hostname}}</td>
+    </tr>
+    <tr>
         <td><label>Last Code</label></td>
         <td>{{component.__state.lastCode}}</td>
     </tr>
     <tr>
         <td colspan="2">
-            <button ng-click="panel.callDeviceService(component, 'clear'); $event.stopPropagation()">Clear</button>
+            <button class="btn btn-primary"
+                    ng-click="panel.callDeviceService(component, 'clear'); $event.stopPropagation()">Clear
+            </button>
         </td>
     </tr>
 </table>
