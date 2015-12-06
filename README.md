@@ -122,7 +122,9 @@ module.exports = require("./lib/itach").createExports({
 });
 ```
 
-and create an **myRemote.html** file under /web, e.g.
+Hereby, make sure that you strip the **"sendir,_module_:_connector_,"** part from the command.
+
+Then create an **myRemote.html** file under /web, e.g.
 
 ```html
 <div style="display: table-row;">
