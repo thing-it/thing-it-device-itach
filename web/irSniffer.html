@@ -5,18 +5,15 @@
     </tr>
     <tr>
         <td><label>IP Address</label></td>
-        <td>{{component.configuration.host}}</td>
-    </tr>
-    <tr>
-        <td><label>Last Code</label></td>
-        <td>{{component.__state.lastCode}}</td>
-    </tr>
-    <tr>
-        <td colspan="2">
-            <button class="btn btn-primary"
-                    ng-click="panel.callDeviceService(component, 'clear'); $event.stopPropagation()">Clear
-            </button>
-        </td>
+        <td>{{component.configuration.hostname}}</td>
     </tr>
 </table>
+<div class="form-group">
+    <label>Last Code</label>
+    <input ng-model="component.__state.lastCode"
+           class="form-control">
+</div>
+<button class="btn btn-primary"
+        ng-click="panel.callDeviceService(component, 'clear'); $event.stopPropagation()">Clear
+</button>
 
