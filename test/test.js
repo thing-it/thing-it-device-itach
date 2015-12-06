@@ -5,31 +5,39 @@ var tvRemote = TVRemote.create({});
 tvRemote.isSimulated = function () {
     return false;
 };
+
 tvRemote.configuration = {
-    host: "10.0.1.28"
+    host: "192.168.1.3",
+    module: 1,
+    connector: 1
 };
-tvRemote.publishEvent = function(event, data){
+
+tvRemote.publishEvent = function (event, data) {
     console.log("Event", event);
 };
-tvRemote.publishStateChange = function(){
+tvRemote.publishStateChange = function () {
     console.log("State Change", this.getState());
 };
 
-tvRemote.logInfo = function(){
-    if (arguments.length == 1 ) {
+tvRemote.logInfo = function () {
+    if (arguments.length == 1) {
         console.log(arguments[0]);
     }
-    else{
+    else {
         console.log(arguments);
     }
 }
-tvRemote.logDebug = function(){
+tvRemote.logDebug = function () {
     tvRemote.logInfo(arguments);
 }
-tvRemote.logError = function(){
+tvRemote.logError = function () {
     tvRemote.logInfo(arguments);
 }
 
 console.log("About to start");
 
 tvRemote.start();
+tvRemote.power();
+
+while (true) {
+}
