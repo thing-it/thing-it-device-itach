@@ -88,7 +88,7 @@ You can create your own Devices with their own User Interface to send IR command
 * adding the desired IR commands to a simple JavaScript file (e.g. [iRobotRoombaRemote.js](./iRobotRoombaRemote.js)) and
 * writing a bit of HTML code (e.g. [web/iRobotRoombaRemote.html](./web/iRobotRoombaRemote.html)) to invoke the Device Services to submit the IR commands.
 
-To obtain the IR commands for your remote control, we have created an **IrSniffer** Device. The auxiliary **IrSniffer** Device is autodiscoverable.
+To obtain the IR commands for your remote control, we have created an **IrSniffer** Device. This (auxiliary) **IrSniffer** Device is autodiscoverable.
 
 To get access to the **IrSniffer** Device connect the **ITach Brige** to your network and initialize **[thing-it-node]** in an arbitrary 
 directory with
