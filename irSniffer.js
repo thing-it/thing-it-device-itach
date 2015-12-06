@@ -127,6 +127,8 @@ function IrSniffer() {
 
             this.remote = new iTach({host: this.configuration.host});
             this.remote.learn(function done(error, code) {
+                this.logDebug("Receiving code: " + code);
+
                 if (error) {
                     this.logError(error);
                 } else {
@@ -140,6 +142,12 @@ function IrSniffer() {
         }
 
         return deferred.promise;
+    };
+
+    /**
+     *
+     */
+    IrSniffer.prototype.stop = function () {
     };
 
     /**
