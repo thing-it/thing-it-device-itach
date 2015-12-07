@@ -81,7 +81,7 @@ If you cannot mount the emitters as sketched, e.g. in case of a moving device li
 User Interfaces depend on the remotes you have been using in your [thing-it] Node Mesh/Configuration. E.g. for a [Configuration
 with a Samsung TV and iRobot Roomba Cleaning Robot](./examples/samsungAndRoombaConfiguration.js):
 
-<img src="./documentation/images/samsung-and-roomba-ui.jpg">
+<img src="./documentation/images/samsung-and-roomba-ui.png">
 
 ## Adding your own Remotes
 
