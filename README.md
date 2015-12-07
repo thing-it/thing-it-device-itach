@@ -74,6 +74,8 @@ connect the IR Emitters to your devices, e.g. like
 
 <img width="40%" src="./documentation/images/emitter-mounting.jpg">
 
+If you cannot mount the emitters as sketched, e.g. in case of a moving device like a cleaning robot, you need to use the [ITach Blaster](http://www.globalcache.com/products/other/).
+
 ## User Interface
 
 User Interfaces depend on the remotes you have been using in your [thing-it] Node Mesh/Configuration. E.g. for a [Configuration
