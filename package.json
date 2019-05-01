@@ -1,5 +1,5 @@
 {
-  "name": "thing-it-device-itach",
+  "name": "@thing-it/device-itach",
   "version": "0.2.11",
   "description": "[thing-it-node] Device Plugin for ITach bridges (e.g. Wifi/IR).",
   "authors": "Marc Gille, Klaus Berberich",
@@ -13,7 +13,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/marcgille/thing-it-device-itach"
+    "url": "https://github.com/thing-it/thing-it-device-itach"
+  },
+  "scripts": {
+    "postversion": "git push && git push --tags && npm publish"
   },
   "dependencies": {
     "net": "^1.0.2",
