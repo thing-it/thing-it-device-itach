@@ -116,9 +116,22 @@ function IrSniffer() {
         this.class = "IrSniffer";
         this.state = {lastCode: null};
 
+        this.operationalState = {
+            status: 'PENDING',
+            message: 'Waiting for initialization...'
+        };
+        this.publishOperationalStateChange();
+
         var deferred = q.defer();
 
         if (this.isSimulated()) {
+
+            this.operationalState = {
+                status: 'OK',
+                message: 'IR Sniffer successfully initialized'
+            }
+            this.publishOperationalStateChange();
+
             deferred.resolve();
         } else {
             if (!itachRemote) {
@@ -131,8 +144,19 @@ function IrSniffer() {
 
                 if (error) {
                     this.logError(error);
+                    this.operationalState = {
+                        status: 'ERROR',
+                        message: 'IR Sniffer initialization error'
+                    }
+                    this.publishOperationalStateChange();
                 } else {
                     this.state.lastCode = code;
+
+                    this.operationalState = {
+                        status: 'OK',
+                        message: 'IR Sniffer successfully initialized'
+                    }
+                    this.publishOperationalStateChange();
 
                     this.publishStateChange();
                 }
